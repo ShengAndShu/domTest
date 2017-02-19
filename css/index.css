@@ -25,21 +25,6 @@ p.color_green{
 .banner{
 	height: 350px;
 }
-.banner_1{
-	background: url(../images/1.jpg) no-repeat 0 0;
-}
-.banner_2{
-	background: url(../images/2.jpg) no-repeat 0 0;
-}
-.banner_3{
-	background: url(../images/3.jpg) no-repeat 0 0;
-}
-.banner_4{
-	background: url(../images/4.jpg) no-repeat 0 0;
-}
-.banner_5{
-	background: url(../images/5.jpg) no-repeat 0 0;
-}
 .banner_1+nav ul li:nth-of-type(1){
 	background-color: #421b1b;
 }
@@ -249,4 +234,21 @@ article:after{
 }
 #contact input,#contact label,#contact textarea{
 	margin-bottom: 10px;
+}
+
+/*banner_image*/
+.banner_1{
+	background: url(../images/1.jpg) no-repeat 0 0;
+}
+.banner_2{
+	background: url(../images/2.jpg) no-repeat 0 0;
+}
+.banner_3{
+	background: url(../images/3.jpg) no-repeat 0 0;
+}
+.banner_4{
+	background: url(../images/4.jpg) no-repeat 0 0;
+}
+.banner_5{
+	background: url(../images/5.jpg) no-repeat 0 0;
 }
