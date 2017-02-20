@@ -1,13 +1,7 @@
-function addLoadEvent(func){
-	var oldonload=window.onload;
-	if(typeof window.onload!="function"){
-		window.onload=func;
-		}else{
-			window.onload=function(){
-				oldonload();
-				func();
-				}
-			}
+window.onload = function(){
+	skill_show();
+	addAllNum();
+	tip_show();
 }
 
 function skill_show(){
@@ -62,7 +56,3 @@ function tip_show(){
 			}
 		}
 	}
-
-addLoadEvent(skill_show);
-addLoadEvent(addAllNum);
-addLoadEvent(tip_show);
