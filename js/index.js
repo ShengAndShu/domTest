@@ -10,24 +10,25 @@ function addLoadEvent(func){
 			}
 }
 
-
 function skill_show(){
-	if(document.getElementById("skill")){
-		var skillList = document.getElementById("skill").getElementsByTagName("li");
+	var skill = document.getElementById("skill");
+	if(skill){
+		var skillList = skill.getElementsByTagName("li");
 		for(var i=0; i<skillList.length; i++){
 			skillList[i].addEventListener("mouseover",function(){
 				for(var j=0; j<skillList.length; j++){
 					skillList[j].className="";
 				};
-				this.className="skill_show";
+				this.className = "skill_show";
 			})
 		}
 	}
 }
 
 function addAllNum(){
-	if(document.getElementById("point")){
-		var pointUls = document.getElementById("point").getElementsByTagName("ul");
+	var point = document.getElementById("point");
+	if(point){
+		var pointUls = point.getElementsByTagName("ul");
 		for(var i=0; i<pointUls.length; i++){
 			addNum(pointUls[i]);
 		};
@@ -48,8 +49,9 @@ function addNum(ul){
 }
 
 function tip_show(){
-	if(document.getElementById("tip")){
-		var tipList = document.getElementById("tip").getElementsByTagName("li");
+	var tip = document.getElementById("tip");
+	if(tip){
+		var tipList = tip.getElementsByTagName("li");
 			for(var i=0; i<tipList.length; i++){
 				tipList[i].addEventListener("mouseover",function(){
 					for(var j=0; j<tipList.length; j++){
